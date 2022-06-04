@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cssreset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Portfolio - Müller Esposito</title>
+</head>
+
+<body>
+    <section id="presentation">
+        <div class="typing-container">
+            <div class="typing-line">
+                <p>Olá,</p>
+            </div>
+            <div class="typing-line">
+                <p>meu nome é</p>
+            </div>
+            <div class="typing-line">
+                <p>Müller Esposito</p>
+            </div>
+            <a href="#portfolio" type="button" class="button-portfolio">Portifólio</a>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <header class="portfolio header">
+            <h1 class="section-title"><span>Portifólio</span></h1>
+        </header>
+        <article class="projects-container">
+            <div class="project-card">
+                <article class="project-card-info">
+                    <a href="https://muller-devnews.vercel.app/" target="_blank">
+                        <h2>Dev News</h2>
+                    </a>
+                    <p>Dev News é uma plataforma de consumo de conteúdo. Através do Prismic CMS, ele consome seu conteúdo usando a API chamada pela biblioteca axios. Existe um processo de autenticação usando a API do GitHub. É preciso estar autenticado para poder acessar o conteúdo completo das postagens. As credenciais de autenticação são armazenadas no Fauna DB. Também existe um sistema de pagamento por assinatura usando a API Stripe.</p>
+                </article>
+                <figure class="project-card-img">
+                    <img src="https://github.com/MullerEsposito/dev-news/raw/main/public/images/app-screenshot.png" alt="imagem de captura do projeto dev news">
+                    <figcaption>Imagem do projeto Dev News</figcaption>
+                </figure>
+            </div>
+            <div class="project-card">
+                <article class="project-card-info">
+                    <a href="https://codepen.io/mulleresposito/full/popGXBM" target="_blank">
+                        <h2>Máquina de Citações Aleatórias</h2>
+                    </a>
+                    <p>
+                        Trata-se de um miniprojeto utilizando Javascript Vanila, HTML5 e SASS. 
+                        O mesmo é capaz de gerar citações aleatórias a cada vez que clica no botão "New Quote".
+                        É possível também compartilhar a citação através de sua conta do Twitter.
+                    </p>                        
+                </article>
+                <figure class="project-card-img">
+                    <img src="https://i.ibb.co/HKFHPvD/random-Quote-Machine.png" alt="captura de imagem do projeto máquina de citações aleatórias">
+                    <figcaption>Imagem do projeto Máquina de Citações Aleatórias</figcaption>
+                </figure>
+            </div>
+            <div class="project-card">
+                <article class="project-card-info">
+                    <a href="https://codepen.io/mulleresposito/full/rNpbrOZ" target="_blank">
+                        <h2>Markdown Editor</h2>
+                    </a>
+                    <p>
+                        Como parte de um dos desafios da formação front-end do Free Code Camp, segue minha versão de um simples projeto de editor de markdown.
+                        Projeto feito com ReactJS e SASS.
+                    </p>
+                </article>
+                <figure class="project-card-img">
+                    <img src="https://i.ibb.co/fXxWcWR/markdown-Editor.png" alt="imagem de captura do projeto Markdown Editor">
+                    <figcaption>Imagem do projeto Markdown Editor</figcaption>
+                </figure>
+            </div>
+            <div class="project-card">
+                <article class="project-card-info">
+                    <a href="https://codepen.io/mulleresposito/full/yLpWKOP" target="_blank">
+                        <h2>Drum Machine</h2>
+                    </a>
+                    <p>
+                        Com essa máquina de batidas musicais você será capaz de gerar alguns sons através do teclado ou o mouse.
+                        Esse projeto foi desenvolvido com ReactJS e SASS.
+                    </p>
+                </article>
+                <figure class="project-card-img">
+                    <img src="https://i.ibb.co/wzWfSrs/drum-Machine.png" alt="imagem de captura do projeto Drum Machine">
+                    <figcaption>Imagem do projeto Drum Machine</figcaption>
+                </figure>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <address>
+            <a href="https://github.com/MullerEsposito" target="_blank">
+                <svg id="icon-github" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 50 50" style="fill:#ffffff;">
+                    <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"></path>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/mulleresposito" target="_blank">
+                <svg id="icon-linkedin" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 48 48" style=" fill:#0288d1;">
+                    <path fill="#0288d1" d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z"></path><rect width="4" height="15" x="14" y="19" fill="#fff"></rect><path fill="#fff" d="M16,17L16,17c-1.2,0-2-0.9-2-2c0-1.1,0.8-2,2-2c1.2,0,2,0.9,2,2C18,16.1,17.2,17,16,17z"></path><path fill="#fff" d="M35,24.5c0-3-2.5-5.5-5.5-5.5c-1.9,0-3.5,0.9-4.5,2.3V19h-4v15h4v-8c0-1.7,1.3-3,3-3s3,1.3,3,3v8h4	C35,34,35,24.9,35,24.5z"></path>
+                </svg>
+            </a>
+            <a href="mailto:mulleresposito@hotmail.com">
+                <svg id="icon-email" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 48 48" style=" fill:#03A9F4;">
+                    <path fill="#03A9F4" d="M21,31c0,1.104,0.896,2,2,2h17c1.104,0,2-0.896,2-2V16c0-1.104-0.896-2-2-2H23c-1.104,0-2,0.896-2,2V31z"></path><path fill="#B3E5FC" d="M42,16.975V16c0-0.428-0.137-0.823-0.367-1.148l-11.264,6.932l-7.542-4.656L22.125,19l8.459,5L42,16.975z"></path><path fill="#0277BD" d="M27 41.46L6 37.46 6 9.46 27 5.46z"></path><path fill="#FFF" d="M21.216,18.311c-1.098-1.275-2.546-1.913-4.328-1.913c-1.892,0-3.408,0.669-4.554,2.003c-1.144,1.337-1.719,3.088-1.719,5.246c0,2.045,0.564,3.714,1.69,4.986c1.126,1.273,2.592,1.91,4.378,1.91c1.84,0,3.331-0.652,4.474-1.975c1.143-1.313,1.712-3.043,1.712-5.199C22.869,21.281,22.318,19.595,21.216,18.311z M19.049,26.735c-0.568,0.769-1.339,1.152-2.313,1.152c-0.939,0-1.699-0.394-2.285-1.187c-0.581-0.785-0.87-1.861-0.87-3.211c0-1.336,0.289-2.414,0.87-3.225c0.586-0.81,1.368-1.211,2.355-1.211c0.962,0,1.718,0.393,2.267,1.178c0.555,0.795,0.833,1.895,0.833,3.31C19.907,24.906,19.618,25.968,19.049,26.735z"></path>
+                </svg>
+            </a>
+        </address>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
