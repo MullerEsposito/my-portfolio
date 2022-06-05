@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&display=swap');
+@import url("./cssreset.css");
+@import url("./project-card.css");
+@import url("./typing.css");
+@import url("./button-portfolio.css");
+@import url("./footer.css");
+
+:root {
+    --body-background: hwb(197deg 12% 73%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.section-title {
+    font-size: 8rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    -webkit-text-stroke: 1px #fefeff;
+}
+
+/* Seção de apresentação */
+#presentation {
+    min-height: 100vh;
+    background-image: url(../assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: min-height 2s;
+}
+
+/* Seção de Portifólio */
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--body-background);
+    padding-bottom: 30px;
+}
+
+#portfolio .portfolio-header h1{
+    margin-bottom: 50px;
+}
+
+/* Media Query */
+@media only screen and (min-width: 1020px) {
+    body {
+        font-size: 1.75rem;
+    }   
+}
+
+@media only screen and (max-width: 1020px) {
+    body {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 2rem;
+    }
+    .section-title {
+        font-size: 6rem;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    h1 {
+        font-size: 2rem
+    }
+    #presentation {
+        min-height: 70vh;
+    }
+}

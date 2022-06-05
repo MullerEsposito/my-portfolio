@@ -1,0 +1,25 @@
+:root {
+  --footer-background: #13262e;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: var(--footer-background);
+}
+
+footer a {
+  margin-left: 10px;
+}
+
+#icon-github, #icon-linkedin, #icon-email {
+  width: 42px;
+  transition: width .75s;
+}
+
+#icon-github:hover, #icon-linkedin:hover, #icon-email:hover {
+  width: 60px;
+  transition: width 1s;
+}

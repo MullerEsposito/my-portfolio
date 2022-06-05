@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+:root {
+  --typing-text: white;
+}
+
+.typing-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Space Mono', monospace;
+  transition: 
+      width 2s,
+      height 2s,
+      margin-left 2s,
+      margin-top 2s;
+}
+
+.typing-container .typing-line {
+  display: flex;
+  width: fit-content;
+}
+
+.typing-container .typing-line p{
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--typing-text);
+}
+
+
+/* ANIMATIONS */
+.typing-animation {
+  animation: 
+      typing 1s steps(18, end) forwards,
+      blink-caret .75s step-end 2;
+}
+
+.typing-animation-final {
+  animation: 
+      typing 1s steps(18, end) forwards,
+      blink-caret .75s step-end 2s infinite;
+}
+
+/* Keyframes */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-right: .15em solid transparent }
+  50% { border-color: orange; }
+}
+
+/* Media Query */
+@media only screen and (min-width: 1020px) {
+  .typing-container {
+      width: 680px;
+      height: 36vh;
+      margin-top: -40px;
+  }
+  .typing-container .typing-line p {
+      font-size: 4rem;
+  }        
+}
+
+@media only screen and (max-width: 1020px) {
+  .typing-container {
+      width: 46%;
+      height: 36vh;
+      margin-top: -40px;
+  }
+  .typing-container .typing-line p {
+      font-size: 3rem;
+  }    
+}
+
+@media only screen and (max-width: 600px) {
+  .typing-container {
+      width: 80%;
+      height: 38vh;
+      margin-top: -40px;
+  }
+  .typing-container .typing-line p {
+      font-size: 3rem;
+  }     
+}
+
+@media only screen and (max-width: 412px) {
+  .typing-container {
+      height: 150px;
+      width: 300px;
+      margin-left: 15px;
+      margin-top: -35px;
+  }
+  .typing-container .typing-line p {
+      font-size: 2rem;
+  }       
+}

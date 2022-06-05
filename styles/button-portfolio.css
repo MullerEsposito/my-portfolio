@@ -1,0 +1,48 @@
+.button-portfolio {
+  display: inline-block;
+  visibility: hidden;
+  background-color: transparent;
+  color: gold;
+  border: 2px solid gold;
+  padding: 10px 30px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  transition: .5s ease;
+  position: absolute;
+  bottom: 0;
+  align-self: center;
+  transition-property: background-color, color;
+  animation: show 2s linear 5s forwards;
+}
+
+.button-portfolio:hover {
+  color: white;
+  border-color: transparent;
+  font-weight: 500;
+  background-color: rgb(216, 184, 5);
+}
+
+@keyframes show {
+  from, to { visibility: visible }
+  from { opacity: 0; } 
+  to { opacity: 1 }
+}
+
+@media only screen and (min-width: 1020px) {
+  .typing-container .button-portfolio {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .button-portfolio {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .button-portfolio {
+    font-size: 1rem;
+  }
+}
