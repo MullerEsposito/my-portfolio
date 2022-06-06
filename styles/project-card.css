@@ -92,6 +92,8 @@
 .project-card .project-card-info p {
   margin-top: 10px;
   line-height: 20px;
+  text-align: justify;
+  text-indent: 2em;
 }
 
 .project-card .project-card-img {
